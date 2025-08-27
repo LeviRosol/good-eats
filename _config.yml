@@ -1,0 +1,33 @@
+# _config.yml
+title: Levi's Good Eats
+description: Weeknight-friendly recipes and cook cards
+url: https://levirosol.github.io
+baseurl: /good-eats   # remove or change if you use a custom domain or root site
+theme: minima
+
+# Build settings
+markdown: kramdown
+permalink: /:categories/:title/
+
+# Collections (for recipes later)
+collections:
+  recipes:
+    output: true
+    permalink: /recipes/:name/
+
+# Plugins (GitHub Pages supports these)
+plugins:
+  - jekyll-feed
+
+# Minima theme options
+minima:
+  skin: auto        # auto/light/dark
+  social_links:
+    - { platform: github,  user_url: "https://github.com/levirosol" }
+
+# Exclusions (optional)
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
