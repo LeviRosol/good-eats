@@ -6,49 +6,35 @@ title: Levi's Good Eats
 # Levi's Good Eats
 Weeknight-friendly recipes and cook cards.
 
-<!-- Latest (most recent 5 recipes across all collections) -->
 ## Latest
 <ul>
-{% assign all = site.recipes | sort: 'date' | reverse %}
-{% for r in all limit:5 %}
+{% assign all = site.recipes | sort: 'path' %}
+{% assign latest = all | sort: 'modified_time' | reverse %}
+{% for r in latest limit:5 %}
   <li><a href="{{ r.url | relative_url }}">{{ r.title }}</a></li>
 {% endfor %}
 </ul>
 
-<!-- By category (based on folder names or front-matter tags) -->
-## Entrees
+## Entrees (A–Z)
 <ul>
-{% for r in site.recipes %}
-  {% if r.path contains '/entrees/' %}
-    <li><a href="{{ r.url | relative_url }}">{{ r.title }}</a></li>
-  {% endif %}
+{% assign entrees = site.recipes | where_exp:'r','r.path contains "/entrees/"' | sort:'title' %}
+{% for r in entrees %}
+  <li><a href="{{ r.url | relative_url }}">{{ r.title }}</a></li>
 {% endfor %}
 </ul>
 
-## Sides
+## Sides (A–Z)
 <ul>
-{% for r in site.recipes %}
-  {% if r.path contains '/sides/' %}
-    <li><a href="{{ r.url | relative_url }}">{{ r.title }}</a></li>
-  {% endif %}
+{% assign sides = site.recipes | where_exp:'r','r.path contains "/sides/"' | sort:'title' %}
+{% for r in sides %}
+  <li><a href="{{ r.url | relative_url }}">{{ r.title }}</a></li>
 {% endfor %}
 </ul>
 
-## Sauces & Basics
+## Sauces & Basics (A–Z)
 <ul>
-{% for r in site.recipes %}
-  {% if r.path contains '/basics/' %}
-    <li><a href="{{ r.url | relative_url }}">{{ r.title }}</a></li>
-  {% endif %}
+{% assign basics = site.recipes | where_exp:'r','r.path contains "/basics/"' | sort:'title' %}
+{% for r in basics %}
+  <li><a href="{{ r.url | relative_url }}">{{ r.title }}</a></li>
 {% endfor %}
 </ul>
-
-<!-- Optional: tag cloud -->
-{% if site.tags %}
-## Tags
-<p>
-{% for tag in site.tags %}
-  <a href="{{ '/tags/#' | append: tag[0] | relative_url }}" style="margin-right:10px;">#{{ tag[0] }}</a>
-{% endfor %}
-</p>
-{% endif %}
