@@ -33,7 +33,7 @@ Weeknight-friendly recipes and cook cards.
 
 ## Entrees (A–Z)
 <ul>
-{% assign entrees = site.recipes | where_exp:'r','r.path contains "/entrees/"' | sort:'title' %}
+{% assign entrees = site.recipes | where_exp:'r','r.path contains "/recipes/entrees/"' | sort:'title' %}
 {% for r in entrees %}
   <li><a href="{{ r.url | relative_url }}">{{ r.title }}</a></li>
 {% endfor %}
