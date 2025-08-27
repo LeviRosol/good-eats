@@ -1,0 +1,14 @@
+```liquid
+{% comment %} Auto-list images under this recipe’s images/ folder {% endcomment %}
+{% assign img_dir = page.path | replace: 'index.md', 'images' %}
+{% assign files = site.static_files | where_exp:'f','f.path contains img_dir' | sort: 'path' %}
+{% if files and files.size > 0 %}
+<h2>Gallery</h2>
+<div class="gallery">
+  {% for f in files %}
+    <figure>
+      <img src="{{ f.path | relative_url }}" alt="{{ page.title }} image {{ forloop.index }}">
+    </figure>
+  {% endfor %}
+</div>
+{% endif %}

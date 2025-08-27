@@ -3,6 +3,7 @@ layout: post
 title: Pork chops with tomato‑basil cream + crispy potatoes
 tags: [entree, pork, 30-min]
 category: entree
+gallery: true
 ---
 
 Serves: 2  
@@ -89,3 +90,5 @@ Thick-seared chops finished in a silky tomato–basil sauce (with cherry tomatoe
 - Red: Chianti Classico or Barbera.  
 - White: Vermentino or Sauvignon Blanc.  
 - Rosé: dry Provence.
+
+{% if page.gallery %}{% include recipe-gallery.html %}{% endif %}
