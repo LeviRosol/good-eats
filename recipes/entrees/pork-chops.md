@@ -2,6 +2,7 @@
 layout: post
 title: Pork chops with tomato‑basil cream + crispy potatoes
 tags: [entree, pork, 30-min]
+category: entree
 ---
 
 Serves: 2  
