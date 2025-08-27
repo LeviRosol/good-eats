@@ -1,22 +1,54 @@
-<!-- index.md -->
 ---
-layout: home
+layout: default
 title: Levi's Good Eats
 ---
 
-Welcome! This is the hub for your cook cards and weeknight-friendly recipes.
+# Levi's Good Eats
+Weeknight-friendly recipes and cook cards.
 
+<!-- Latest (most recent 5 recipes across all collections) -->
 ## Latest
-- [Pork chops with tomato-basil cream + crispy potatoes](/good-eats/recipes/pork-chops)
-- [Salmon (Brown-Butter Lemon + Dijon-Herb)](/good-eats/recipes/salmon)
-- [Crispy smashed potatoes](/good-eats/recipes/smashed-potatoes)
-- [Basil oil drizzle (5‑min)](/good-eats/recipes/basil-oil)
-- [Garlic‑salt sour‑cream drizzle (5‑min)](/good-eats/recipes/garlic-sour-cream)
+<ul>
+{% assign all = site.recipes | sort: 'date' | reverse %}
+{% for r in all limit:5 %}
+  <li><a href="{{ r.url | relative_url }}">{{ r.title }}</a></li>
+{% endfor %}
+</ul>
 
-## Sections
-- Mains: pork, salmon, chicken, pasta
-- Sides: potatoes, greens, veggies
-- Sauces & basics: drizzles, condiments, stocks
+<!-- By category (based on folder names or front-matter tags) -->
+## Entrees
+<ul>
+{% for r in site.recipes %}
+  {% if r.path contains '/entrees/' %}
+    <li><a href="{{ r.url | relative_url }}">{{ r.title }}</a></li>
+  {% endif %}
+{% endfor %}
+</ul>
 
-Tip: when you start adding recipe files, create Markdown files in `recipes/` like:
-`recipes/pork-chops.md` with front matter:
+## Sides
+<ul>
+{% for r in site.recipes %}
+  {% if r.path contains '/sides/' %}
+    <li><a href="{{ r.url | relative_url }}">{{ r.title }}</a></li>
+  {% endif %}
+{% endfor %}
+</ul>
+
+## Sauces & Basics
+<ul>
+{% for r in site.recipes %}
+  {% if r.path contains '/basics/' %}
+    <li><a href="{{ r.url | relative_url }}">{{ r.title }}</a></li>
+  {% endif %}
+{% endfor %}
+</ul>
+
+<!-- Optional: tag cloud -->
+{% if site.tags %}
+## Tags
+<p>
+{% for tag in site.tags %}
+  <a href="{{ '/tags/#' | append: tag[0] | relative_url }}" style="margin-right:10px;">#{{ tag[0] }}</a>
+{% endfor %}
+</p>
+{% endif %}
