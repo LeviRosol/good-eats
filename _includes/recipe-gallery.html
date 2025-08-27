@@ -1,7 +1,14 @@
-```liquid
-{% comment %} Auto-list images under this recipe’s images/ folder {% endcomment %}
+{% comment %}
+_includes/recipe-gallery.html
+Auto-inserts any images found next to the recipe at: images/
+Works with foldered recipes like:
+  _recipes/entrees/pork_chops/index.md
+  _recipes/entrees/pork_chops/images/01.jpg, 02.png, ...
+{% endcomment %}
+
 {% assign img_dir = page.path | replace: 'index.md', 'images' %}
 {% assign files = site.static_files | where_exp:'f','f.path contains img_dir' | sort: 'path' %}
+
 {% if files and files.size > 0 %}
 <h2>Gallery</h2>
 <div class="gallery">
