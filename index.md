@@ -8,8 +8,7 @@ Weeknight-friendly recipes and cook cards.
 
 ## Latest
 <ul>
-{% assign all = site.recipes | sort: 'path' %}
-{% assign latest = all | sort: 'modified_time' | reverse %}
+{% assign latest = site.recipes | sort: 'modified_time' | reverse %}
 {% for r in latest limit:5 %}
   <li><a href="{{ r.url | relative_url }}">{{ r.title }}</a></li>
 {% endfor %}
@@ -17,23 +16,7 @@ Weeknight-friendly recipes and cook cards.
 
 ## Entrees (A–Z)
 <ul>
-{% assign entrees = site.recipes | where: "category", "entree" | sort: "title" %}
-{% for r in entrees %}
-  <li><a href="{{ r.url | relative_url }}">{{ r.title }}</a></li>
-{% endfor %}
-</ul>
-
-## Entrees (A–Z)
-<ul>
-{% assign entrees = site.recipes | where: "category", "entree" | sort: "title" %}
-{% for r in entrees %}
-  <li><a href="{{ r.url | relative_url }}">{{ r.title }}</a></li>
-{% endfor %}
-</ul>
-
-## Entrees (A–Z)
-<ul>
-{% assign entrees = site.recipes | where_exp:'r','r.path contains "/recipes/entrees/"' | sort:'title' %}
+{% assign entrees = site.recipes | where_exp:'r','r.url contains "/recipes/entrees/"' | sort:'title' %}
 {% for r in entrees %}
   <li><a href="{{ r.url | relative_url }}">{{ r.title }}</a></li>
 {% endfor %}
@@ -41,7 +24,7 @@ Weeknight-friendly recipes and cook cards.
 
 ## Sides (A–Z)
 <ul>
-{% assign sides = site.recipes | where_exp:'r','r.path contains "/sides/"' | sort:'title' %}
+{% assign sides = site.recipes | where_exp:'r','r.url contains "/recipes/sides/"' | sort:'title' %}
 {% for r in sides %}
   <li><a href="{{ r.url | relative_url }}">{{ r.title }}</a></li>
 {% endfor %}
@@ -49,7 +32,7 @@ Weeknight-friendly recipes and cook cards.
 
 ## Sauces & Basics (A–Z)
 <ul>
-{% assign basics = site.recipes | where_exp:'r','r.path contains "/basics/"' | sort:'title' %}
+{% assign basics = site.recipes | where_exp:'r','r.url contains "/recipes/basics/"' | sort:'title' %}
 {% for r in basics %}
   <li><a href="{{ r.url | relative_url }}">{{ r.title }}</a></li>
 {% endfor %}
