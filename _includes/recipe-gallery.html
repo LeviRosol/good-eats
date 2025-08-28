@@ -1,21 +1,31 @@
 {% comment %}
-_includes/recipe-gallery.html
-Auto-inserts any images found next to the recipe at: images/
-Works with foldered recipes like:
-  _recipes/entrees/pork_chops/index.md
-  _recipes/entrees/pork_chops/images/01.jpg, 02.png, ...
+Auto gallery (6 slots): renders as 2 rows x 3 columns on desktop/tablet,
+and 1 column on small screens. Images are expected at:
+  images/1.(jpg|jpeg|png|webp) ... images/6.(...)
+Missing images auto-remove via onerror (no broken icons).
+Usage in a recipe page:
+  - front matter: gallery: auto
+  - include: {% include recipe-gallery.html %}
 {% endcomment %}
 
-{% assign img_dir = page.path | replace: 'index.md', 'images' %}
-{% assign files = site.static_files | where_exp:'f','f.path contains img_dir' | sort: 'path' %}
+{% if page.gallery == "auto" or page.gallery == true %}
+  {% assign base = page.url | append: "images/" %}
+  {% assign exts = "jpg,jpeg,png,webp" | split: "," %}
 
-{% if files and files.size > 0 %}
-<h2>Gallery</h2>
-<div class="gallery">
-  {% for f in files %}
-    <figure>
-      <img src="{{ f.path | relative_url }}" alt="{{ page.title }} image {{ forloop.index }}">
-    </figure>
-  {% endfor %}
-</div>
+  <h2>Gallery</h2>
+  <div class="gallery-grid gallery-2x3">
+    {%- for i in (1..6) -%}
+      <div class="gallery-cell">
+        {%- assign shown = false -%}
+        {%- for ext in exts -%}
+          {%- assign src = base | append: i | append: "." | append: ext -%}
+          <img class="gallery-img"
+               src="{{ src | relative_url }}"
+               alt="{{ page.title }} image {{ i }}"
+               loading="lazy"
+               onerror="this.closest('.gallery-cell').remove();">
+        {%- endfor -%}
+      </div>
+    {%- endfor -%}
+  </div>
 {% endif %}

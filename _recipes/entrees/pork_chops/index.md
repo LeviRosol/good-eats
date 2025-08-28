@@ -91,4 +91,4 @@ Thick-seared chops finished in a silky tomato–basil sauce (with cherry tomatoe
 - White: Vermentino or Sauvignon Blanc.  
 - Rosé: dry Provence.
 
-{% if page.gallery %}{% include recipe-gallery.html %}{% endif %}
+{% include recipe-gallery.html %}
