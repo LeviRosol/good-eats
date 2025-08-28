@@ -2,26 +2,26 @@
 ---
 /* assets/css/style.scss */
 
+/* Import Minima theme styles first */
 @import "minima";
 
 /* Global tweaks */
 body { -webkit-font-smoothing: antialiased; }
-img { max-width: 100%; height: auto; }
+img { max-width: 100%; height: auto; display: block; }
 
 /* Recipe gallery */
 .gallery-grid { display: grid; gap: 12px; }
-.gallery-2x3 { grid-template-columns: 1fr; }
-@media (min-width: 640px) {
+.gallery-2x3 { grid-template-columns: 1fr; }           /* mobile: single column */
+@media (min-width: 640px) {                             /* tablet/desktop: 3 columns (2 rows max 6 imgs) */
   .gallery-2x3 { grid-template-columns: repeat(3, 1fr); }
 }
 .gallery-cell { position: relative; }
 .gallery-img {
-  display: block;
   width: 100%;
   height: auto;
   border-radius: 8px;
   object-fit: cover;
 }
 
-/* Optional spacing */
+/* Optional page spacing */
 .page-content { padding-top: 1rem; }
