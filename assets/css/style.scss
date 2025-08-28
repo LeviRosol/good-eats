@@ -1,31 +1,8 @@
-.gallery { display:grid; gap:12px; grid-template-columns: 1fr; }
-
-/* Base gallery grid */
-.gallery-grid {
-  display: grid;
-  gap: 12px;
-}
-
-/* Mobile-first: single column */
-.gallery-2x3 {
-  grid-template-columns: 1fr;
-}
-
-/* Tablet/desktop: 3 columns (2 rows with up to 6 images) */
-@media (min-width: 640px) {
-  .gallery-2x3 {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-.gallery-cell {
-  position: relative;
-}
-
-.gallery-img {
-  display: block;
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  object-fit: cover;
-}
+---
+---
+@import "minima";
+.gallery-grid { display: grid; gap: 12px; }
+.gallery-2x3 { grid-template-columns: 1fr; }
+@media (min-width: 640px) { .gallery-2x3 { grid-template-columns: repeat(3, 1fr); } }
+.gallery-cell { position: relative; }
+.gallery-img { display: block; width: 100%; height: auto; border-radius: 8px; object-fit: cover; }
