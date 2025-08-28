@@ -9,7 +9,7 @@ Usage in a recipe page:
 {% endcomment %}
 
 {% if page.gallery == "auto" or page.gallery == true %}
-  {% assign base = page.url | append: "images/" %}
+  {% assign base = page.url | remove: 'index/' | append: 'images/' %}
   {% assign exts = "jpg,jpeg,png,webp" | split: "," %}
 
   <h2>Gallery</h2>
