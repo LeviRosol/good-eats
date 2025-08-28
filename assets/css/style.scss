@@ -1,8 +1,27 @@
 ---
 ---
+/* assets/css/style.scss */
+
 @import "minima";
+
+/* Global tweaks */
+body { -webkit-font-smoothing: antialiased; }
+img { max-width: 100%; height: auto; }
+
+/* Recipe gallery */
 .gallery-grid { display: grid; gap: 12px; }
 .gallery-2x3 { grid-template-columns: 1fr; }
-@media (min-width: 640px) { .gallery-2x3 { grid-template-columns: repeat(3, 1fr); } }
+@media (min-width: 640px) {
+  .gallery-2x3 { grid-template-columns: repeat(3, 1fr); }
+}
 .gallery-cell { position: relative; }
-.gallery-img { display: block; width: 100%; height: auto; border-radius: 8px; object-fit: cover; }
+.gallery-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Optional spacing */
+.page-content { padding-top: 1rem; }
