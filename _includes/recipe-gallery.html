@@ -10,7 +10,7 @@ Usage in a recipe page:
 
 {% if page.gallery == "auto" or page.gallery == true %}
   {% assign base = page.url | remove: 'index/' | append: 'images/' %}
-  {% assign exts = "jpg,jpeg,png,webp" | split: "," %}
+  {% assign exts = "jpg" | split: "," %}
 
   <h2>Gallery</h2>
   <div class="gallery-grid gallery-2x3">
