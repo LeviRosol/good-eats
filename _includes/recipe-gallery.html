@@ -12,7 +12,7 @@ Usage in a recipe page:
   {% assign base = page.url | remove: 'index/' | append: 'images/' %}
   {% assign exts = "jpg" | split: "," %}
 
-  <h2>Gallery</h2>
+<h2>Gallery</h2>
   <div class="gallery-grid gallery-2x3">
     {%- for i in (1..6) -%}
       <div class="gallery-cell">
