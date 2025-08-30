@@ -6,7 +6,7 @@ title: Levi's Good Eats
 # Levi's Good Eats
 Weeknight-friendly recipes and cook cards.
 
-## Latest
+## Recent Additions
 <ul>
 {% assign latest = site.recipes | sort: 'modified_time' | reverse %}
 {% for r in latest limit:5 %}
