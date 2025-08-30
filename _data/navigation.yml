@@ -1,0 +1,7 @@
+main:
+  - title: "Entrees"
+    url: /recipes/entrees/
+  - title: "Sides"
+    url: /recipes/sides/
+  - title: "Basics"
+    url: /recipes/basics/

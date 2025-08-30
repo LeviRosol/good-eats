@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: posts
 title: Beef Stroganoff
 tags: [entree, beef, weeknight, skillet, 30-min]
 category: entree

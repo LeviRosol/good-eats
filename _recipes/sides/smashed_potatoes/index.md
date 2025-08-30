@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: posts
 title: Crispy smashed potatoes
 tags: [side, potatoes, roasted]
 category: side

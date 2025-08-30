@@ -1,9 +1,7 @@
 ---
-layout: default
-title: Levi's Good Eats
+layout: home
 ---
 
-# Levi's Good Eats
 Weeknight-friendly recipes and cook cards.
 
 ## Recent Additions

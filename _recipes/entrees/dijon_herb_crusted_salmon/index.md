@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: posts
 title: Salmon — Brown‑Butter Lemon or Dijon‑Herb (sheet‑pan friendly)
 tags: [entree, salmon, 20‑min]
 category: entree

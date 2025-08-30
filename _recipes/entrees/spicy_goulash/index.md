@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: posts
 title: Spicy Goulash
 tags: [entree, beef, pork, crowd, comfort, stovetop]
 category: entree

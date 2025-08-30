@@ -4,7 +4,7 @@ description: Weeknight-friendly recipes and cook cards
 url: https://levirosol.github.io
 baseurl: /good-eats
 
-theme: minima
+theme: minimal-mistakes-jekyll
 markdown: kramdown
 permalink: /:categories/:title/
 
@@ -14,10 +14,12 @@ collections:
     output: true
     permalink: /recipes/:path/
 
+include: ["_pages"]
+
 plugins:
   - jekyll-feed
 
-minima:
+minimal-mistakes-jekyll:
   skin: auto
   social_links:
     - { platform: github, user_url: "https://github.com/levirosol" }
@@ -27,3 +29,22 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - node_modules
+
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: recipes
+    values:
+      gallery: auto
+      author: Levi Rosol
+      author_profile: true
+      layout: posts
+  - scope:
+      path: ""
+      type: pages
+    values:
+      gallery: auto
+      author: Levi Rosol
+      author_profile: true
+      layout: posts

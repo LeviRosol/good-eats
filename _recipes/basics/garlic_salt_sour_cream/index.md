@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: posts
 title: Garlic‑salt sour‑cream drizzle (5‑min)
 tags: [sauce, drizzle, basics]
 category: basics

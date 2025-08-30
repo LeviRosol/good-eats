@@ -1,9 +1,7 @@
 ---
-layout: post
 title: Pork chops with tomato‑basil cream
 tags: [entree, pork, 30‑min]
 category: entree
-gallery: auto
 ---
 
 Serves: 2
