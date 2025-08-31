@@ -1,22 +1,11 @@
-{% comment %}
-Auto gallery (6 slots): renders as 2 rows x 3 columns on desktop/tablet,
-and 1 column on small screens. Images are expected at:
-  images/1.(jpg|jpeg|png|webp) ... images/6.(...)
-Missing images auto-remove via onerror (no broken icons).
-Usage in a recipe page:
-  - front matter: gallery: auto
-  - include: {% include recipe-gallery.html %}
-{% endcomment %}
-
-{% if page.gallery == "auto" or page.gallery == true %}
+{% if page.gallery "auto" or page.gallery true %}
   {% assign base = page.url | remove: 'index/' | append: 'images/' %}
   {% assign exts = "jpg" | split: "," %}
 
-<h2>Gallery</h2>
+  <h2>Gallery</h2>
   <div class="gallery-grid gallery-2x3">
     {%- for i in (1..6) -%}
       <div class="gallery-cell">
-        {%- assign shown = false -%}
         {%- for ext in exts -%}
           {%- assign src = base | append: i | append: "." | append: ext -%}
           <img class="gallery-img"
@@ -28,4 +17,115 @@ Usage in a recipe page:
       </div>
     {%- endfor -%}
   </div>
+
+<!-- Lightbox modal -->
+<div id="lightbox" class="lightbox" hidden aria-modal="true" role="dialog">
+  <button class="lightbox-close" aria-label="Close">&times;</button>
+  <button class="lightbox-arrow lightbox-prev" aria-label="Previous">&#10094;</button>
+  <img class="lightbox-img" alt="">
+  <button class="lightbox-arrow lightbox-next" aria-label="Next">&#10095;</button>
+</div>
+
+<script>
+  (function () {
+    const grid = document.querySelector('.gallery-grid');
+    const modal = document.getElementById('lightbox');
+    const imgEl = modal.querySelector('.lightbox-img');
+    const closeBtn = modal.querySelector('.lightbox-close');
+    const prevBtn = modal.querySelector('.lightbox-prev');
+    const nextBtn = modal.querySelector('.lightbox-next');
+
+    const imgs = Array.from(document.querySelectorAll('.gallery-grid .gallery-img'));
+    let idx = -1;
+
+    function setActive(on) {
+      modal.classList.toggle('is-active', !!on);
+    }
+
+    function show(i, dir = 0) {
+      if (!imgs.length) return;
+      if (i < 0) i = imgs.length - 1;
+      if (i >= imgs.length) i = 0;
+      idx = i;
+      const t = imgs[idx];
+
+      // trigger transition: set direction class, swap src, then mark visible
+      modal.classList.remove('slide-left', 'slide-right');
+      if (dir < 0) modal.classList.add('slide-left');
+      if (dir > 0) modal.classList.add('slide-right');
+
+      imgEl.src = t.src;
+      imgEl.alt = t.alt || '';
+      // Force reflow to restart animation when changing image
+      void imgEl.offsetWidth;
+      modal.classList.add('img-enter');
+      requestAnimationFrame(() => modal.classList.remove('img-enter'));
+    }
+
+    function openFrom(target) {
+      const i = imgs.indexOf(target);
+      if (i === -1) return;
+      show(i);
+      modal.hidden = false;
+      setActive(true);
+      document.body.style.overflow = 'hidden';
+    }
+
+    function close() {
+      setActive(false);
+      modal.hidden = true;
+      imgEl.removeAttribute('src');
+      imgEl.removeAttribute('alt');
+      document.body.style.overflow = '';
+      idx = -1;
+      resetTouch();
+    }
+
+    function next() { show(idx + 1, +1); }
+    function prev() { show(idx - 1, -1); }
+
+    // Click handlers
+    grid.addEventListener('click', (e) => {
+      const t = e.target.closest('.gallery-img');
+      if (!t) return;
+      openFrom(t);
+    });
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) close(); // backdrop
+    });
+    closeBtn.addEventListener('click', (e) => { e.stopPropagation(); close(); });
+    nextBtn.addEventListener('click', (e) => { e.stopPropagation(); next(); });
+    prevBtn.addEventListener('click', (e) => { e.stopPropagation(); prev(); });
+
+    // Keyboard
+    document.addEventListener('keydown', (e) => {
+      if (modal.hidden) return;
+      if (e.key === 'Escape') { e.preventDefault(); close(); }
+      else if (e.key === 'ArrowRight') { e.preventDefault(); next(); }
+      else if (e.key === 'ArrowLeft') { e.preventDefault(); prev(); }
+    });
+
+    // Touch/swipe
+    let touchStartX = 0, touchStartY = 0, touching = false;
+    const SWIPE_THRESHOLD = 40, VERTICAL_TOLERANCE = 60;
+    function resetTouch() { touching = false; touchStartX = touchStartY = 0; }
+
+    modal.addEventListener('touchstart', (e) => {
+      if (modal.hidden) return;
+      const t = e.changedTouches[0];
+      touching = true;
+      touchStartX = t.clientX; touchStartY = t.clientY;
+    }, { passive: true });
+
+    modal.addEventListener('touchend', (e) => {
+      if (!touching || modal.hidden) return;
+      const t = e.changedTouches[0];
+      const dx = t.clientX - touchStartX, dy = t.clientY - touchStartY;
+      if (Math.abs(dx) > SWIPE_THRESHOLD && Math.abs(dy) < VERTICAL_TOLERANCE) {
+        dx < 0 ? next() : prev();
+      }
+      resetTouch();
+    }, { passive: true });
+  })();
+  </script>
 {% endif %}
