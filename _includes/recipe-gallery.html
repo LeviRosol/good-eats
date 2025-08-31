@@ -2,21 +2,21 @@
   {% assign base = page.url | remove: 'index/' | append: 'images/' %}
   {% assign exts = "jpg" | split: "," %}
 
-  <h2>Gallery</h2>
-  <div class="gallery-grid gallery-2x3">
-    {%- for i in (1..6) -%}
-      <div class="gallery-cell">
-        {%- for ext in exts -%}
-          {%- assign src = base | append: i | append: "." | append: ext -%}
-          <img class="gallery-img"
-               src="{{ src | relative_url }}"
-               alt="{{ page.title }} image {{ i }}"
-               loading="lazy"
-               onerror="this.closest('.gallery-cell').remove();">
-        {%- endfor -%}
-      </div>
-    {%- endfor -%}
-  </div>
+<h2>Gallery</h2>
+<div class="gallery-grid gallery-2x3">
+  {%- for i in (1..6) -%}
+    <div class="gallery-cell">
+      {%- for ext in exts -%}
+        {%- assign src = base | append: i | append: "." | append: ext -%}
+        <img class="gallery-img"
+             src="{{ src | relative_url }}"
+             alt="{{ page.title }} image {{ i }}"
+             loading="lazy"
+             onerror="this.closest('.gallery-cell').remove();">
+      {%- endfor -%}
+    </div>
+  {%- endfor -%}
+</div>
 
 <!-- Lightbox modal -->
 <div id="lightbox" class="lightbox" hidden aria-modal="true" role="dialog">

@@ -19,10 +19,7 @@ include: ["_pages"]
 plugins:
   - jekyll-feed
 
-minimal-mistakes-jekyll:
-  skin: auto
-  social_links:
-    - { platform: github, user_url: "https://github.com/levirosol" }
+minimal_mistakes_skin: "dirt"
 
 exclude:
   - README.md
