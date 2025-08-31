@@ -1,9 +1,7 @@
 ---
-layout: posts
 title: Garlic‑salt sour‑cream drizzle (5‑min)
 tags: [sauce, drizzle, basics]
 category: basics
-gallery: auto
 ---
 
 Yield: ~1 cup (scales easily) • Time: 5 minutes + chill

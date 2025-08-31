@@ -1,9 +1,7 @@
 ---
-layout: posts
 title: Crispy smashed potatoes
 tags: [side, potatoes, roasted]
 category: side
-gallery: auto
 ---
 
 Serves: 2–4 (as a side)

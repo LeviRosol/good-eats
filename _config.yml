@@ -37,7 +37,7 @@ defaults:
       gallery: auto
       author: Levi Rosol
       author_profile: true
-      layout: posts
+      layout: single
   - scope:
       path: ""
       type: pages

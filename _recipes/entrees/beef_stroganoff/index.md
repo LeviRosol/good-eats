@@ -1,9 +1,7 @@
 ---
-layout: posts
 title: Beef Stroganoff
 tags: [entree, beef, weeknight, skillet, 30-min]
 category: entree
-gallery: auto
 ---
 Serves: 4–6
 Gear: 12‑in skillet or sauté pan, 4‑qt pot for pasta, wooden spoon

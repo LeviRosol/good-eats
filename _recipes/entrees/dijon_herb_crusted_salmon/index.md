@@ -1,9 +1,7 @@
 ---
-layout: posts
 title: Salmon — Brown‑Butter Lemon or Dijon‑Herb (sheet‑pan friendly)
 tags: [entree, salmon, 20‑min]
 category: entree
-gallery: auto
 ---
 
 Serves: 2–4 • Oven: 425°F (218°C) • Gear: sheet pan (or cast‑iron), instant‑read thermometer

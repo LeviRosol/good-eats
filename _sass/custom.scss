@@ -90,3 +90,28 @@ img { max-width: 100%; height: auto; display: block; }
 @media (max-width: 640px) {
   .lightbox-arrow { width: 3.2rem; height: 3.2rem; font-size: 2.4rem; }
 }
+
+/* Override Minimal Mistakes hero styles */
+.page__hero,
+.page__hero--overlay {
+  height: 60vh;        /* cap height */
+  max-height: 60vh;
+  background-position: center center !important;
+  background-size: cover !important;
+  display: flex;
+  align-items: center;  /* center inner content vertically */
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Optional: tweak inner content spacing/contrast */
+.page__hero .wrapper,
+.page__hero--overlay .wrapper {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* Darken overlay a bit if using overlay variant */
+.page__hero--overlay::before {
+  background: rgba(0,0,0,0.35); /* adjust to taste */
+}

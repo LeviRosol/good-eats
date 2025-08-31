@@ -1,9 +1,7 @@
 ---
-layout: posts
 title: Spicy Goulash
 tags: [entree, beef, pork, crowd, comfort, stovetop]
 category: entree
-gallery: auto
 ---
 Serves: 6–8
 Gear: 6–8 qt Dutch oven or stockpot, large skillet (optional), wooden spoon

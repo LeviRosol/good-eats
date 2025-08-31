@@ -3,14 +3,15 @@ title: Pork chops with tomato‑basil cream
 tags: [entree, pork, 30‑min]
 category: entree
 # header:
-#    image: /recipes/entrees/tomato_basil_pork_chops/images/1.jpg
+#   image: /recipes/entrees/tomato_basil_pork_chops/images/1.jpg
+  # overlay_color: "#f0f0f0"
+  # overlay_filter: "0.9"
 ---
-
-- Serves: 2
-- Gear: 12‑in cast iron, instant‑read thermometer
 
 ## Overview
 Thick‑seared pork chops finished in a silky tomato–basil pan sauce. Sour cream brings the creaminess (no heavy cream), cherry tomatoes add fresh pop.
+- Serves: 2
+- Gear: 12‑in cast iron, instant‑read thermometer
 
 ## Prep (do ahead 10–20 min)
 - Mix a small bowl of minced shallot and garlic.
