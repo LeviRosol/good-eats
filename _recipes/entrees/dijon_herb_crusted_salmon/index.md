@@ -4,10 +4,11 @@ tags: [entree, salmon, 20‑min]
 category: entree
 ---
 
-Serves: 2–4 • Oven: 425°F (218°C) • Gear: sheet pan (or cast‑iron), instant‑read thermometer
-
 ## Overview
 Two fast, high‑reward ways to cook salmon that play perfectly with roasted green beans and crispy/smashed potatoes. Target a juicy 125–130°F center.
+
+- Serves: 2–4 • Oven: 425°F (218°C)
+- Gear: sheet pan (or cast‑iron), instant‑read thermometer
 
 ## Prep (10 minutes)
 - Pat salmon dry. Pin‑bone if needed.

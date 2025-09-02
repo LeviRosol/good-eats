@@ -4,10 +4,11 @@ tags: [side, potatoes, roasted]
 category: side
 ---
 
-Serves: 2–4 (as a side)
 
 ## Overview
 Small potatoes boiled to just‑tender, smashed on a hot oiled sheet, then roasted until shattery‑crisp. Finish with salt, pepper, and your favorite drizzle (garlic‑salt sour‑cream is a banger).
+
+- Serves: 2–4 (as a side)
 
 ## Prep (do ahead 10–20 min)
 - Rinse potatoes; sort similar sizes.

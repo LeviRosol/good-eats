@@ -4,10 +4,11 @@ tags: [sauce, drizzle, basics]
 category: basics
 ---
 
-Yield: ~1 cup (scales easily) • Time: 5 minutes + chill
-
 ## Overview
 A fast, addictive drizzle for roasted veggies, crispy potatoes, chops, tacos—pretty much everything. It’s just sour cream, garlic salt, and water to thin.
+
+- Yield: ~1 cup (scales easily)
+- Time: 5 minutes + chill
 
 ## Prep (do ahead 10–30 min)
 - Mix first, then chill so the garlic blooms. Stir and re‑thin before serving.

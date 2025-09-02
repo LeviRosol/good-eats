@@ -3,11 +3,13 @@ title: Beef Stroganoff
 tags: [entree, beef, weeknight, skillet, 30-min]
 category: entree
 ---
-Serves: 4–6
-Gear: 12‑in skillet or sauté pan, 4‑qt pot for pasta, wooden spoon
 
 ## Overview
 A grown‑up nod to the childhood creamy beef elbows, leaning classic stroganoff: browned beef, onions, mushrooms, Dijon, Worcestershire, and a silky sour‑cream finish. No canned soup—fast, rich, and weeknight‑friendly.
+
+- Serves: 4–6
+- Gear: 12‑in skillet or sauté pan, 4‑qt pot for pasta, wooden spoon
+
 
 ## Prep (10–15 min)
 - Dice 1 onion; mince 2–3 garlic cloves.

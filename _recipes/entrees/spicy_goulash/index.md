@@ -3,11 +3,12 @@ title: Spicy Goulash
 tags: [entree, beef, pork, crowd, comfort, stovetop]
 category: entree
 ---
-Serves: 6–8
-Gear: 6–8 qt Dutch oven or stockpot, large skillet (optional), wooden spoon
 
 ## Overview
 Hearty, tomato‑forward goulash with Italian sausage and venison, mellow onions and garlic, and a spicy kick from hot pepper mix/giardiniera. Simmered until saucy, then served over tender elbow macaroni (cooked separately so you control doneness). Easy to split the heat for Jessica.
+
+- Serves: 6–8
+- Gear: 6–8 qt Dutch oven or stockpot, large skillet (optional), wooden spoon
 
 ## Prep (10–15 min)
 - Dice 2 onions; mince 1 head of garlic.
