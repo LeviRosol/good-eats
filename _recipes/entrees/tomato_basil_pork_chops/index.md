@@ -2,10 +2,6 @@
 title: Pork chops with tomato‑basil cream
 tags: [entree, pork, 30‑min]
 category: entree
-# header:
-#   image: /recipes/entrees/tomato_basil_pork_chops/images/1.jpg
-  # overlay_color: "#f0f0f0"
-  # overlay_filter: "0.9"
 ---
 
 ## Overview

@@ -5,3 +5,5 @@ main:
     url: /recipes/sides/
   - title: "Basics"
     url: /recipes/basics/
+  - title: "Menus"
+    url: /recipes/menus/
