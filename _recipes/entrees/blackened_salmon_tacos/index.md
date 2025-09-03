@@ -1,5 +1,5 @@
 ---
-title: Blackened Salmon Tacos + Lime‑Garlic Sour Cream
+title: Blackened Salmon Tacos w/ Lime‑Garlic Sour Cream
 tags: [entree, fish, tacos, weeknight, skillet, 30-min]
 category: entree
 ---
