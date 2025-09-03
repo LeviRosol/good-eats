@@ -63,3 +63,5 @@ Blackened salmon tacos with lime‑garlic sour cream, plus two sides: roasted pe
 ## Notes
 - Keep heat mild for Jessica by skipping flakes in the rub; add heat to your tacos at the table.
 - If short on time, roast beans on a second sheet pan at 450°F for ~12–15 min while peppers roast.
+
+{% include recipe-gallery.html %}
