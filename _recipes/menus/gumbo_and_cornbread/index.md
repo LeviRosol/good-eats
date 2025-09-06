@@ -14,10 +14,36 @@ Dark‑roux chicken, sausage & shrimp gumbo (potato‑thickened, no okra) with h
 - [Skillet Cornbread](/good-eats/recipes/sides/skillet_cornbread/index/)
 
 ## Shopping snapshot
-- Andouille (12–16 oz), chicken thighs (1.5–2 lb), shrimp (1 lb), imitation crab (8–12 oz)
-- Onion, celery, bell pepper, garlic, baby potatoes (1.5–2 lb), scallions/parsley, lemons
-- Chicken stock, flour, neutral oil/butter, Cajun/Creole seasoning, paprika, thyme/oregano, bay leaves, Worcestershire (opt)
-- Boxed cornbread mix, eggs, milk, honey/butter
+
+- Andouille sausage (12–16 oz)
+- Chicken thighs (1.5–2 lb)
+- Shrimp, frozen OK (1 lb; 26–31 ct)
+- Imitation crab (8–12 oz)
+- Baby potatoes (1.5–2 lb)
+- Onion (1 large)
+- Celery (3 ribs)
+- Bell pepper (1)
+- Garlic (4–6 cloves)
+- Scallions (1 bunch)
+- Parsley (1 bunch)
+- Lemons (2) or cider vinegar
+- Chicken stock (6–8 cups; ~2 qt)
+- Neutral oil (or oil + butter for roux; ~1/2 cup fat total)
+- All‑purpose flour (~1/2 cup for roux)
+- Bay leaves (2)
+- Cajun/Creole seasoning (1–2 tbsp, mild)
+- Paprika (1 tsp)
+- Dried thyme (1/2 tsp)
+- Dried oregano (1/2 tsp)
+- Worcestershire sauce (optional)
+- Long‑grain rice (optional, for serving)
+
+Cornbread
+- Boxed cornbread mix (1 large box or 2 small for 10–12 in skillet)
+- Eggs (per box)
+- Milk (per box)
+- Butter (1 stick; for pan + finishing)
+- Honey (optional)
 
 ## Timeline (order of operations, ~60–75 min)
 
