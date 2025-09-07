@@ -115,3 +115,56 @@ img { max-width: 100%; height: auto; display: block; }
 .page__hero--overlay::before {
   background: rgba(0,0,0,0.35); /* adjust to taste */
 }
+
+/* Print-friendly, condensed recipe cards for Chrome */
+@media print {
+  /* Page setup */
+  @page { size: Letter; margin: 0.5in; }
+  html, body { background: #fff !important; }
+  body { color: #111; font: 12px/1.35 system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; }
+
+  /* Hide site chrome */
+  header, nav, footer, .site-header, .site-footer, .pagination, .share, .comments,
+  .sidebar, .post-meta, .post-date, .no-print { display: none !important; }
+
+  /* Core layout */
+  .post, .page, .post-content, .wrapper, main {
+    max-width: 100% !important; width: 100% !important; padding: 0 !important; margin: 0 !important;
+  }
+  .post-title, h1 { font-size: 20px; line-height: 1.2; margin: 0 0 6px; }
+  h2 { font-size: 15px; margin: 10px 0 6px; }
+  h3 { font-size: 13px; margin: 8px 0 4px; }
+  p { margin: 0 0 6px; }
+  ul, ol { margin: 0 0 6px 18px; }
+  li { margin: 0 0 3px; }
+  hr { border: 0; border-top: 1px solid #ddd; margin: 8px 0; }
+
+  /* Two-column option for Ingredients + Steps */
+  .print-columns { columns: 2; column-gap: 16px; }
+  .print-columns h2, .print-columns h3 { break-after: avoid; }
+  .print-avoid-break { break-inside: avoid; page-break-inside: avoid; }
+
+  /* Images */
+  img, figure { max-width: 100%; height: auto; }
+  .recipe-gallery, .gallery, .post img { display: none !important; } /* Hide galleries by default */
+  .thumb-print img { display: block !important; max-height: 140px; margin: 4px 0; }
+
+  /* Links: show URLs only for external */
+  a { color: #111; text-decoration: none; }
+  a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 10px; color: #666; }
+  a[href^="/"], a[href^="{{ site.baseurl }}"] { text-decoration: none; }
+  a[href^="/"]::after { content: ""; }
+
+  /* Keep sections together */
+  h2, h3, .section, .notes, .related { break-inside: avoid; page-break-inside: avoid; }
+
+  /* Optional print header/footer blocks */
+  .print-header { display: block; font-size: 11px; margin-bottom: 6px; color: #444; }
+  .print-footer { display: block; font-size: 10px; margin-top: 6px; color: #666; }
+}
+
+/* Usage:
+- Wrap Ingredients + Steps in <div class="print-columns">…</div> for 2-column print.
+- Add class="print-avoid-break" to lists you don’t want split.
+- Wrap a small image in class="thumb-print" to allow it on print.
+*/
