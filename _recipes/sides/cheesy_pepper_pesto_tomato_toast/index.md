@@ -35,4 +35,7 @@ Buttery toasted French bread topped with pepper‑pesto, thick tomato slices, an
 - Add‑ons: prosciutto or crispy bacon; drizzle of balsamic after broil.
 - Herb hit: extra basil on top right before serving.
 
+## Related
+- [Pepper Pesto](/good-eats/recipes/basics/pepper_pesto/index/)
+
 {% include recipe-gallery.html %}

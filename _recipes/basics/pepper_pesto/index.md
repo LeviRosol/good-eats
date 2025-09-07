@@ -38,4 +38,7 @@ Bright, nutty basil pesto with a jalapeño/serrano kick—one‑bowl, processor�
 - Storage: refrigerate up to 1 week; freeze up to 3 months (ice‑cube trays work great). Top with fresh oil after thawing if needed.
 - Use it: toss with hot pasta + pasta water, spread on grilled salmon or chicken, drizzle on roasted veg or crispy potatoes, swirl into your house sour‑cream drizzle.
 
+## Related
+- [Cheesy Pepper Pesto Tomato Toast](/good-eats/recipes/sides/cheesy_pepper_pesto_tomato_toast/index/)
+
 {% include recipe-gallery.html %}
