@@ -1,3 +1,7 @@
 Levi Rosol:
-  name        : "Levi Rosol"
+  name: "Levi Rosol"
   avatar: /assets/images/levi_profile.jpg
+  links:
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://instagram.com/kitchenatrosewood"
