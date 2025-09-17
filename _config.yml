@@ -38,6 +38,7 @@ defaults:
       author: Levi Rosol
       author_profile: true
       layout: single
+      share: true
   - scope:
       path: ""
       type: pages
