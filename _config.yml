@@ -46,3 +46,9 @@ defaults:
       author: Levi Rosol
       author_profile: true
       layout: posts
+
+analytics:
+  provider: "google-gtag"
+  google:
+    tracking_id: "G-X8S9EE8BMN"
+    anonymize_ip: false # default
