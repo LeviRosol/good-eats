@@ -5,13 +5,15 @@ category: entree
 ---
 
 ## Overview
-Set‑and‑forget Mississippi roast with hot banana peppers and baby potatoes. Shred the beef, strain the pot juices into a peppery au jus, and broil cheese‑topped French rolls for dunking.
+Mississippi roast with a cast‑iron sear and red‑wine deglaze for extra depth. Slow‑cook with hot banana peppers and baby potatoes, shred, reduce the pot juices into a peppery au jus, and broil cheese‑topped French dips.
 - Serves: 6–8 sandwiches
-- Gear: Slow cooker (6–8 qt), sheet pan, strainer, small saucepan (for au jus), tongs
+- Gear: Slow cooker (6–8 qt), 12‑in cast iron, sheet pan, strainer, small saucepan, tongs
 
 ## Ingredients (cook by feel)
 ### Roast
 - Beef chuck/arm roast, 3–4 lb
+- Extra‑virgin olive oil (to rub)
+- Kosher salt & heavy black pepper
 - Ranch seasoning packet (1)
 - Au jus gravy packet (1)
 - Hot banana peppers, 1 jar, sliced + 1/3–1/2 cup brine
@@ -19,36 +21,42 @@ Set‑and‑forget Mississippi roast with hot banana peppers and baby potatoes. 
 - Small potatoes, 1.5–2 lb, halved
 - Onion, 1 (optional), thick slices
 - Garlic, 3–4 cloves, smashed (optional)
-- Black pepper; kosher salt only if needed (packets are salty)
+- Dry red wine, 1/2–3/4 cup (for deglaze)
 
 ### Sandwiches
 - French “everything” sandwich rolls
 - Provolone or Havarti slices
-- Optional toppers: giardiniera, pepper pesto drizzle (your portion), extra peppers
+- Optional toppers: giardiniera, extra peppers, pepper pesto drizzle (your portion)
 
 ## Steps
-1. Load the slow cooker
-   - Layer onions/garlic (if using), then the roast (pat dry). Scatter potatoes around.
-   - Sprinkle ranch and au jus packets over roast. Add sliced banana peppers and 1/3–1/2 cup brine. Dot butter on top. Black pepper to taste.
+1. Sear the roast
+   - Pat roast dry; rub lightly with EVOO. Season generously with salt and heavy pepper.
+   - Heat cast iron over medium‑high to a light smoke; sear roast 2–3 min per side to deep brown. Transfer roast to slow cooker on top of onions/garlic (if using). Scatter potatoes around.
 
-2. Cook
+2. Deglaze
+   - Pour red wine into hot skillet; scrape up fond. Reduce 1–2 min and pour into the slow cooker.
+
+3. Load flavors
+   - Sprinkle ranch and au jus packets over roast. Add sliced banana peppers and 1/3–1/2 cup brine. Dot butter on top. Add a few grinds of pepper.
+
+4. Cook
    - Low 8–10 hours (preferred) or High 5–6 hours, until roast shreds easily and potatoes are tender.
 
-3. Shred and strain
-   - Transfer roast to a board; shred into chunky strands. Scoop out potatoes to a platter.
-   - Pour cooker liquid through a strainer into a saucepan; skim fat. Simmer 5–10 min to reduce to a flavorful au jus. Taste; add pepper brine or water to balance.
+5. Shred and strain
+   - Move roast to a board; shred into chunky strands. Scoop potatoes to a platter.
+   - Strain cooker liquid into a saucepan; skim fat. Simmer 5–10 min to reduce into a flavorful au jus. Taste; balance with a splash of pepper brine or water as needed.
 
-4. Toast rolls and melt cheese
-   - Heat broiler. Split rolls, brush cut sides with a little butter or oil. Broil cut‑side up until lightly golden.
-   - Pile shredded beef on bottoms, lay cheese on top. Broil briefly until cheese melts and browns at the edges.
+6. Toast rolls and melt cheese
+   - Heat broiler. Split rolls; brush cut sides with a little butter/oil; broil to lightly toast.
+   - Pile shredded beef on bottoms; top with cheese. Broil just until melted and browned at edges.
 
-5. Serve
-   - Add potatoes alongside. Spoon peppers/giardiniera over sandwiches if desired. Serve with warm au jus for dipping.
+7. Serve
+   - Add potatoes alongside. Top sandwiches with peppers/giardiniera if desired. Serve with warm au jus for dipping.
 
 ## Notes / swaps
-- Mild option for Jessica: use fewer hot peppers or rinse some; keep extra heat for your sandwich.
-- If very salty: dilute au jus with a splash of water/low‑sodium stock; finish with a knob of butter.
-- Make‑ahead: roast holds well; reheat meat in some au jus. Potatoes rewarm in microwave or skillet with a little butter.
+- Salt caution: packets and brine are salty—adjust added salt to taste.
+- Mild for Jessica: use fewer hot peppers or rinse some; keep extra heat for your sandwich.
+- Make‑ahead: reheat beef in a little au jus; re‑crisp rolls under broiler.
 
 ## Related
 - [Roasted Peppers & Onions](/good-eats/recipes/sides/roasted_peppers_and_onions/index/)
