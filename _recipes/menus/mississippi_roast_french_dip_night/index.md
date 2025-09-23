@@ -10,7 +10,7 @@ Cast‑iron–seared Mississippi roast deglazed with red wine, slow‑cooked wit
 - Gear: Slow cooker (6–8 qt), 12‑in cast iron, sheet pan, strainer, saucepan, tongs
 
 ## Recipes
-- [Mississippi Roast French Dips with Potatoes](/good-eats/recipes/entrees/mississippi_roast_french_dips_with_potatoes/index/)
+- [Mississippi Roast French Dips with Potatoes](/good-eats/recipes/entrees/mississippi_roast_french_dip/index/)
 - [Roasted Peppers & Onions](/good-eats/recipes/sides/roasted_peppers_and_onions/index/)
 
 ## Shopping snapshot
